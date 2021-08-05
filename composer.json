@@ -1,0 +1,19 @@
+{
+    "name": "khamdullaevuz/parser",
+    "description": "Parsing web sites",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Parser\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Elbek Khamdullaev",
+            "email": "elbek.khamdullaev@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
