@@ -1,21 +1,45 @@
-# parser
+# Parser
+
+[![Telegram](https://img.shields.io/badge/Telegram-blue.svg?logo=telegram)](https://t.me/khamdullaevuz)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/khamdullaevuz/parser)
+
+![GitHub followers](https://img.shields.io/github/followers/khamdullaevuz?style=flat)
+![GitHub forks](https://img.shields.io/github/forks/khamdullaevuz/parser?style=flat)
+![GitHub Repo stars](https://img.shields.io/github/stars/khamdullaevuz/parser?style=flat)
+![GitHub watchers](https://img.shields.io/github/watchers/khamdullaevuz/parser?style=flat)
 
 # Composer orqali yuklab olish:
-
 ```bash
 composer require khamdullaevuz/parser
 ```
 
-# Ishlatish:
-
+# Ulash:
 ```php
 require_once __DIR__.'/vendor/autoload.php';
 
 use Parser\Parser;
 
 $parser = new Parser;
-
-$get = $parser->getcontent("https://m.investing.com");
-$ex = $parser->exp($get);
-var_dump($ex);
 ```
+## Contentni olish
+```php
+$data = $parser->getContent("https://khamdullaev.uz");
+```
+
+## Olingan kontentni bo'laklarga ajratish
+```php
+$ex = $parser->exp($data);
+```
+
+Bunda $ex[qator] \(ya'ni qator o'rnida ma'lumot qatori ko'rinishida\) ishlatiladi.
+
+## Bo'laklardan ma'lumotni kesib olish
+```php
+$info = $parser->cut($ex[1], "<h1>", "</h1>");
+```
+
+# Examples:
+
+Examples: [example](/examples/example.php)
+
+# Created by: [Elbek Khamdullaev](https://khamdullaev.uz)
