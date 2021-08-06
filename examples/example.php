@@ -1,10 +1,10 @@
 <?php
 
-require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__.'/../src/Parser.php';
 
-use Parser\Parser;
+use KhamdullaevUz\Parser\Scraper;
 
-$parser = new Parser;
+$parser = new Scraper;
 
 $data = $parser->getContent("https://khamdullaev.uz");
 

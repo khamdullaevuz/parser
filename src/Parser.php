@@ -1,8 +1,8 @@
 <?php
 
-namespace Parser;
+namespace KhamdullaevUz\Parser;
 
-class Parser
+class Scraper
 {
 	public function getContent($url){
 		$options = [
@@ -23,7 +23,7 @@ class Parser
         return $data;
 	}
 
-	public function cut($data, $start, $end){
+	public function cutContent($data, $start, $end){
 		$data = stristr($data, $start);
         $data = substr($data, strlen($start));
         $stop = stripos($data, $end);
@@ -31,12 +31,14 @@ class Parser
         return $data;
 	}
 
-	public function json($arr=[]){
-		return json_encode($arr);
+	public function jsonContent($data=[]){
+		return json_encode($data);
 	}
 
 	public function exp($value)
 	{
-		return explode("\n", "\n".$value);
+		$data = explode("\n", $value);
+        array_unshift($data, " ");
+        return $data;
 	}
 }

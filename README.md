@@ -8,20 +8,36 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/khamdullaevuz/parser?style=flat)
 ![GitHub watchers](https://img.shields.io/github/watchers/khamdullaevuz/parser?style=flat)
 
-# Composer orqali yuklab olish:
+# Ishlatish:
+
+## Composer orqali yuklab olish:
 ```bash
 composer require khamdullaevuz/parser
 ```
 
-# Ishlatish:
-## Ulanish
+### Ulanish
 ```php
 require_once __DIR__.'/vendor/autoload.php';
 
-use Parser\Parser;
+use KhamdullaevUz\Parser\Scraper;
 
-$parser = new Parser;
+$parser = new Scraper;
 ```
+
+## Github orqali yuklab olish:
+```bash
+git clone https://github.com/khamdullaevuz/parser
+```
+
+### Ulanish
+```php
+require_once __DIR__.'/src/Parser.php';
+
+use KhamdullaevUz\Parser\Scraper;
+
+$parser = new Scraper;
+```
+
 ## Contentni olish
 ```php
 $data = $parser->getContent("https://khamdullaev.uz");
