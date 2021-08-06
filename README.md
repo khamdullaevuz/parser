@@ -10,7 +10,7 @@
 
 # Ishlatish:
 
-## Composer orqali yuklab olish:
+## Composer orqali yuklab olish
 ```bash
 composer require khamdullaevuz/parser
 ```
@@ -24,7 +24,7 @@ use KhamdullaevUz\Parser\Scraper;
 $parser = new Scraper;
 ```
 
-## Github orqali yuklab olish:
+## Github orqali yuklab olish
 ```bash
 git clone https://github.com/khamdullaevuz/parser
 ```
