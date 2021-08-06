@@ -8,7 +8,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/khamdullaevuz/parser?style=flat)
 ![GitHub watchers](https://img.shields.io/github/watchers/khamdullaevuz/parser?style=flat)
 
-# Ishlatish:
+# Ishlatish
 
 ## Composer orqali yuklab olish
 ```bash
