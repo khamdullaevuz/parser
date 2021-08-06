@@ -8,4 +8,4 @@ $parser = new Scraper;
 
 $data = $parser->getContent("https://khamdullaev.uz");
 
-var_dump($data);
+print($data);
